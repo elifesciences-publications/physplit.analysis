@@ -10,7 +10,7 @@ if (!require("devtools")) install.packages("devtools")
 # then install direct depenendencies
 devtools::install_github("jefferis/gphys")
 devtools::install_github("jefferislab/physplitdata")
-devtools::install_github("sfrechter/physplit.analysis")
+devtools::install_github("jefferislab/physplit.analysis")
 ```
 
 The only complication is that you need to have a GitHub PAT (Personal Access Token) 
@@ -27,7 +27,7 @@ Error in stop(github_error(request)) : Not Found (404)
 ```
 at the last step, then you can replaced the last step with. :
 ```r
-devtools::install_github("sfrechter/physplit.analysis", dependencies=FALSE)
+devtools::install_github("jefferislab/physplit.analysis", dependencies=FALSE)
 ```
 See e.g. https://github.com/hadley/devtools/issues/1381 for the origin of this error.
 ## Hacking physplit.analysis
