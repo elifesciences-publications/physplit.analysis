@@ -4,10 +4,17 @@
 #'   (i.e. blank) response. It is assumed that each odour column is matched to
 #'   the blank column that most recently preceded it.
 #'
+#'   When \code{test_each_odour_trial} each single odour trial is compared with
+#'   all of the blank trials (making an approoriate adjustment to the time base
+#'   for the event counts, see Note in \code{\link{poisson.test}} docs).
+#'
 #' @param x An m x n odour response matrix for m trials of n odours
 #' @param odours Names of odours (defaults to \code{colnames(x)})
 #' @param maxtrials Maximum number of trials to consider (default => all)
+#' @param test_each_odour_trial Whether to test each odour trial individually
+#'   against all blank trials.
 #' @param ... Additional parameters passed to \code{poisson.test}
+#' @return p values from the Poisson test
 #' @export
 #' @importFrom stats poisson.test
 #' @seealso \code{\link{poisson.test}},
@@ -23,7 +30,8 @@
 #' # significant response (either up or down)
 #' spikes.pval=sapply(spikerespall, poissonTestOdoursSF, simplify = F)
 #' }
-poissonTestOdoursSF<-function(x,odours=colnames(x),maxtrials=NA,...){
+poissonTestOdoursSF<-function(x, odours=colnames(x), maxtrials=NA,
+                              test_each_odour_trial=FALSE, ...){
   # we need to find all the blank columns
 
   blanks_id = grep("(WatBl|OilBl|ClrBL|ClrB2)", colnames(x))
@@ -41,9 +49,15 @@ poissonTestOdoursSF<-function(x,odours=colnames(x),maxtrials=NA,...){
   if(!is.na(maxtrials) & maxtrials<nrow(x)) x=x[1:maxtrials,]
   simple_poisson<-function(od, odcol, blankcol, ...){
     if(sum(!is.na(od))==0) return(NA)
-    sum_odour_counts=sum(od[,odcol],na.rm=T)
     sum_blank_counts=sum(od[,blankcol],na.rm=T)
-    pval<-poisson.test(c(sum_odour_counts,sum_blank_counts),...)$p.value
+    if(test_each_odour_trial) {
+      nblanks=length(od[,blankcol])
+      # test each odour trial separately
+      pval <- sapply(od[,odcol], function(x) poisson.test(c(x, sum_blank_counts), T=c(1,nblanks))$p.value)
+    } else {
+      sum_odour_counts=sum(od[,odcol],na.rm=T)
+      pval<-poisson.test(c(sum_odour_counts,sum_blank_counts),...)$p.value
+    }
     ifelse(is.na(pval),1,pval)
   }
   mapply(simple_poisson, odours_id, blanks_for_odour, MoreArgs = list(od=x, ...))

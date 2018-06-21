@@ -4,7 +4,8 @@
 \alias{poissonTestOdoursSF}
 \title{Carry out Poisson test on absolute number of spikes in odour response}
 \usage{
-poissonTestOdoursSF(x, odours = colnames(x), maxtrials = NA, ...)
+poissonTestOdoursSF(x, odours = colnames(x), maxtrials = NA,
+  test_each_odour_trial = FALSE, ...)
 }
 \arguments{
 \item{x}{An m x n odour response matrix for m trials of n odours}
@@ -13,7 +14,13 @@ poissonTestOdoursSF(x, odours = colnames(x), maxtrials = NA, ...)
 
 \item{maxtrials}{Maximum number of trials to consider (default => all)}
 
+\item{test_each_odour_trial}{Whether to test each odour trial individually
+against all blank trials.}
+
 \item{...}{Additional parameters passed to \code{poisson.test}}
+}
+\value{
+p values from the Poisson test
 }
 \description{
 Carry out Poisson test on absolute number of spikes in odour response
@@ -22,6 +29,10 @@ Carry out Poisson test on absolute number of spikes in odour response
 This function compares each odour trial with a matching control
   (i.e. blank) response. It is assumed that each odour column is matched to
   the blank column that most recently preceded it.
+
+  When \code{test_each_odour_trial} each single odour trial is compared with
+  all of the blank trials (making an approoriate adjustment to the time base
+  for the event counts, see Note in \code{\link{poisson.test}} docs).
 }
 \examples{
 # calculate summary response for cell 100 for window of 700-1700 ms
