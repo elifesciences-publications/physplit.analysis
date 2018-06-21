@@ -1,6 +1,8 @@
 #' Carry out Poisson test on absolute number of spikes in odour response
 #'
-#' @details It is assumed that each odour column is matched to the blank column that most recently preceded it
+#' @details This function compares each odour trial with a matching control
+#'   (i.e. blank) response. It is assumed that each odour column is matched to
+#'   the blank column that most recently preceded it.
 #'
 #' @param x An m x n odour response matrix for m trials of n odours
 #' @param odours Names of odours (defaults to \code{colnames(x)})
@@ -8,7 +10,8 @@
 #' @param ... Additional parameters passed to \code{poisson.test}
 #' @export
 #' @importFrom stats poisson.test
-#' @seealso \code{\link{poisson.test}}, \code{\link[gphys]{OdourResponseFromSpikes}}
+#' @seealso \code{\link{poisson.test}},
+#'   \code{\link[gphys]{OdourResponseFromSpikes}}
 #' @examples
 #' # calculate summary response for cell 100 for window of 700-1700 ms
 #' spikeresp=OdourResponseFromSpikes(Spikes[[100]][[1]], responseWindow=c(700,1700))

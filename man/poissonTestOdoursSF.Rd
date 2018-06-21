@@ -19,7 +19,9 @@ poissonTestOdoursSF(x, odours = colnames(x), maxtrials = NA, ...)
 Carry out Poisson test on absolute number of spikes in odour response
 }
 \details{
-It is assumed that each odour column is matched to the blank column that most recently preceded it
+This function compares each odour trial with a matching control
+  (i.e. blank) response. It is assumed that each odour column is matched to
+  the blank column that most recently preceded it.
 }
 \examples{
 # calculate summary response for cell 100 for window of 700-1700 ms
@@ -34,5 +36,6 @@ spikes.pval=sapply(spikerespall, poissonTestOdoursSF, simplify = F)
 }
 }
 \seealso{
-\code{\link{poisson.test}}, \code{\link[gphys]{OdourResponseFromSpikes}}
+\code{\link{poisson.test}},
+  \code{\link[gphys]{OdourResponseFromSpikes}}
 }
