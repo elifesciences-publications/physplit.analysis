@@ -4,7 +4,13 @@
 \name{physplit.analysis}
 \alias{physplit.analysis}
 \alias{physplit.analysis-package}
-\title{Packaged and versioned Analysis functions for Shahar's cells}
+\title{Packaged and versioned analysis functions for Shahar's cells}
 \description{
-these functions were originally part of RandIgor
+These functions were originally part of RandIgor.
+}
+\references{
+Shahar Frechter, Alexander S. Bates, Sina Tootoonian,
+  Michael-John Dolan, James D. Manton, Arian Jamasb, Johannes Kohl, Davi
+  Bock, Gregory S.X.E. Jefferis. bioRxiv 336982
+  \href{https://doi.org/10.1101/336982}{doi: 10.1101/336982}
 }
