@@ -1,4 +1,6 @@
 # physplit.analysis
+[![Docs](https://img.shields.io/badge/docs-100%25-brightgreen.svg)](http://jefferislab.github.io/physplit.analysis/reference/)
+
 Packaged and versioned Analysis functions for Shahar's cells
 
 # Install
