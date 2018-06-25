@@ -1,10 +1,15 @@
 Package: physplit.analysis
 Type: Package
 Title: Packaged and versioned Analysis functions for Shahar's cells
-Version: 0.1
-Date: 2015-03-06
-Author: Shahar Greg Ashley
-Maintainer: Shahar Frechter <sfrechter@gmail.com>
+Version: 0.2
+Authors@R: c(
+    person("Shahar", "Frechter",
+      role = c("aut"), comment = c(ORCID = "0000-0002-0431-5849")),
+    person("Gregory", "Jefferis", email = "jefferis@gmail.com", 
+      role = c("aut", "cre"), comment = c(ORCID = "0000-0002-0587-9355")),
+    person("James", "Manton", email = "ajd.manton@googlemail.com",
+      role = c("aut"), comment = c(ORCID = "0000-0001-9260-3156"))
+    )
 Description: Assorted analysis functions for Shahar's LHN (PhySplit) dataset.
 License: GPL-3
 LazyData: TRUE
