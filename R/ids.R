@@ -35,3 +35,15 @@ anyid2stack <- function(x) {
   m=match(anyid2shortid(x), physplitdata::PhySplitDB$shortid)
   physplitdata::PhySplitDB$stack[m]
 }
+
+#' \code{anyid2longid} converts any of Shahar's ids (or a filename) to an Igor
+#' Pro cell id (i.e. the ones used to name the odour response data in
+#' \code{\link[physplitdata]{Spikes}}) object.
+#' @rdname anyid2shortid
+#' @export
+#' @examples
+#' anyid2longid("120726c3")
+#' anyid2longid("120726BJK1742SF274LC.lsm")
+anyid2longid <- function(x) {
+  paste0('nm20',anyid2shortid(x))
+}

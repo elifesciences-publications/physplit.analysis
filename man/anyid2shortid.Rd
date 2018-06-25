@@ -3,11 +3,14 @@
 \name{anyid2shortid}
 \alias{anyid2shortid}
 \alias{anyid2stack}
+\alias{anyid2longid}
 \title{Convert any identifier / file path to Shahar's short id or stack id}
 \usage{
 anyid2shortid(x)
 
 anyid2stack(x)
+
+anyid2longid(x)
 }
 \arguments{
 \item{x}{A stack, cell or short id or a filename that begins with one of
@@ -22,6 +25,10 @@ A vector of short ids or stack ids, named by the original id when
   filename) to a short id
 
 \code{anyid2stack} converts any of Shahar's ids (or a filename) to a stack id
+
+\code{anyid2longid} converts any of Shahar's ids (or a filename) to an Igor
+Pro cell id (i.e. the ones used to name the odour response data in
+\code{\link[physplitdata]{Spikes}}) object.
 }
 \details{
 shortids look like 120726c3
@@ -30,4 +37,6 @@ shortids look like 120726c3
 anyid2shortid("120726BJK1742SF274LC.lsm")
 anyid2stack("120726BJK1742SF274LC.lsm")
 anyid2stack("120726c3")
+anyid2longid("120726c3")
+anyid2longid("120726BJK1742SF274LC.lsm")
 }
