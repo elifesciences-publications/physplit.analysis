@@ -65,3 +65,23 @@ create_simple_summary_arrays=function (x = physplitdata::smSpikes, cells = NULL)
   allodours = unique(unlist(lapply(x, names)))
   lapply(allfreqs, addnacols, allodours)
 }
+
+
+#' Find the common set of odours for which all cells have trials
+#'
+#' @param x Any identifier for the cells
+#' @return A character vector of odour names
+#' @details Uses \code{\link{create_raw_summary_array}} under the hood
+#' @export
+#' @examples
+#' common_odours_for_cells(c("130823c0", "130809c0", "140211c0"))
+common_odours_for_cells <- function(x) {
+  x=anyid2longid(x)
+  sa=create_raw_summary_array(cells=x)
+
+  # pick any time point and look for NA
+  baseline_spikes=sa[,,1]
+  # sum spikes for each odour - the result will be NA if any spike count is NA
+  sums=colSums(baseline_spikes)
+  names(sums)[!is.na(sums)]
+}

@@ -57,3 +57,41 @@ test_that("create_summary_array works",{
     )
   expect_equal(dimnames(res), dn)
 })
+
+
+test_that("common_odours_for_cells works",{
+  testcells <- c("130823c0", "130809c0", "140211c0", "120531c0", "140224c0")
+  baseline <-
+    c(
+      "OilBl",
+      "MetSl",
+      "HexAc",
+      "PeEtA",
+      "AceAc",
+      "EtHex",
+      "2PnAc",
+      "5OdMx",
+      "BeZal",
+      "bCitr",
+      "1HxOl",
+      "Frnsl",
+      "WatBl",
+      "Cdvrn",
+      "Sprmn",
+      "Acoin",
+      "MtAct",
+      "AcAcd",
+      "PrpnA",
+      "BtrAc",
+      "Amnia",
+      "Pyrdn",
+      "PAcHd",
+      "HCL36",
+      "PAcAc",
+      "Vingr",
+      "Geosn",
+      "VinGe",
+      "PEtAm"
+    )
+  expect_equal(common_odours_for_cells(testcells), baseline)
+})
