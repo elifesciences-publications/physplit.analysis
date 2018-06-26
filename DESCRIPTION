@@ -20,7 +20,7 @@ Imports:
     binhf,
     nat.nblast
 Depends:
-    gphys,
+    gphys (>= 0.11.0.9000),
     physplitdata
 Suggests:
     ggplot2,

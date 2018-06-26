@@ -24,12 +24,7 @@ plotcellsf <- function(cellid, yaxis=FALSE, xaxis=FALSE, odours=NULL,
   spikes=physplitdata::Spikes[[cellid]][[1]]
   vmcell=physplitdata::Vm[[cellid]]
   if(!is.null(odours)){
-  oddconf=attr(spikes, 'oddconf')
-    if(any(duplicated(oddconf$odour))) {
-      # we need to remove the dupes for subset by odour to work
-      keepchannels=oddconf$chan[!duplicated(oddconf$odour)]
-      spikes=subset(spikes, channels=keepchannels)
-    }
+    oddconf=attr(spikes, 'oddconf')
     spikes=subset(spikes, odours=odours)
     # match the selected channels against the full original list
     # to choose which Vm lines to plot
