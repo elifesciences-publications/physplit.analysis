@@ -32,7 +32,7 @@ When the \code{odours} argument is specified, only the first
   in an error.
 }
 \examples{
-plotcellsf("130208c1", odours=c("OilBl", "E2Hex","Prpyl", "Et3HB"))
+plotcellsf("130208c1", odours=c("OilBl", "E2Hex","Prpyl", "Et3HB", "Cdvrn", "Sprmn"), yaxis=TRUE)
 }
 \seealso{
 \code{\link[gphys]{PlotRasterFromSweeps}},

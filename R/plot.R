@@ -17,7 +17,7 @@
 #'   \code{\link[gphys]{AddLinesToRasterPlot}},
 #'   \code{\link[gphys]{subset.spiketimes}}, \code{\link{anyid2longid}}
 #' @examples
-#' plotcellsf("130208c1", odours=c("OilBl", "E2Hex","Prpyl", "Et3HB"))
+#' plotcellsf("130208c1", odours=c("OilBl", "E2Hex","Prpyl", "Et3HB", "Cdvrn", "Sprmn"), yaxis=TRUE)
 plotcellsf <- function(cellid, yaxis=FALSE, xaxis=FALSE, odours=NULL,
                        PlotDividers=FALSE, ...) {
   cellid=anyid2longid(cellid)
