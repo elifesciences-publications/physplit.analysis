@@ -8,8 +8,8 @@ baseline firing rate of a cell. The algorithm assumes Poisson
 spiking in the baseline period and compares the posterior on a
 single rate explaining the data to having two rates.}
 \usage{
-DetectVariableBaselineUsingBayesianModelSelection(r, lrange = NULL, nsd = 5,
-  nlvals = 1001, bias = 0)
+DetectVariableBaselineUsingBayesianModelSelection(r, lrange = NULL,
+  nsd = 5, nlvals = 1001, bias = 0)
 }
 \arguments{
 \item{r}{A vector of length N contain the baseline spike counts for N odors.}

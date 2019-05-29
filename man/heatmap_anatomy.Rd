@@ -4,8 +4,9 @@
 \alias{heatmap_anatomy}
 \title{heatmap for set of cells on nblast anatomy distance}
 \usage{
-heatmap_anatomy(x, col = jet.colors(20), labRow = NULL, labCol = NULL,
-  ColSideColors, RowSideColors, heatmapfun = heatmap, ...)
+heatmap_anatomy(x, col = jet.colors(20), labRow = NULL,
+  labCol = NULL, ColSideColors, RowSideColors, heatmapfun = heatmap,
+  ...)
 }
 \arguments{
 \item{x}{A score matrix calculated by

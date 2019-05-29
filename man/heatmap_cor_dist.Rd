@@ -6,7 +6,8 @@
 \title{heatmap for set of cells and odours based on correlation distance}
 \usage{
 heatmap_cor_dist(cells, odours, col = jet.colors(20), labRow = NULL,
-  labCol = NULL, ColSideColors, RowSideColors, heatmapfun = heatmap, ...)
+  labCol = NULL, ColSideColors, RowSideColors, heatmapfun = heatmap,
+  ...)
 
 spike_cor_dist(cells, odours)
 }
@@ -40,8 +41,6 @@ default \code{heatmap}. See examples.}
 \item{...}{Additional parameters passed to \code{\link{heatmap}} function}
 }
 \description{
-heatmap for set of cells and odours based on correlation distance
-
 \code{spike_cor_dist} calculate the cross-correlation between
   the spike responses of a set of cells. It is called by
   \code{heatmap_cor_dist} but you may wish to use this data directly.

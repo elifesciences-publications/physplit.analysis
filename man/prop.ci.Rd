@@ -47,3 +47,4 @@ Other population-sampling: \code{\link{required.sample.size}},
   \code{\link{sample_finite_population}},
   \code{\link{truepos_given_sample}}
 }
+\concept{population-sampling}

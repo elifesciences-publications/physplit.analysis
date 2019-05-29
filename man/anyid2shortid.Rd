@@ -23,12 +23,6 @@ A vector of short ids or stack ids, named by the original id when
 \description{
 \code{anyid2shortid} converts any of Shahar's ids (or a
   filename) to a short id
-
-\code{anyid2stack} converts any of Shahar's ids (or a filename) to a stack id
-
-\code{anyid2longid} converts any of Shahar's ids (or a filename) to an Igor
-Pro cell id (i.e. the ones used to name the odour response data in
-\code{\link[physplitdata]{Spikes}}) object.
 }
 \details{
 shortids look like 120726c3

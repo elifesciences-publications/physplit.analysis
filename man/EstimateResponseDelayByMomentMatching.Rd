@@ -4,8 +4,8 @@
 \alias{EstimateResponseDelayByMomentMatching}
 \title{Estimates the response delay by cross correlating the observed response with the odor profile convolved with an exponential filter.}
 \usage{
-EstimateResponseDelayByMomentMatching(y, x0, verbose = FALSE, plot = FALSE,
-  minDelay = 0, fitOdorProfileOnError = TRUE)
+EstimateResponseDelayByMomentMatching(y, x0, verbose = FALSE,
+  plot = FALSE, minDelay = 0, fitOdorProfileOnError = TRUE)
 }
 \arguments{
 \item{y}{A length T vector of the mean firing rate of the neuron in a series of bins.}

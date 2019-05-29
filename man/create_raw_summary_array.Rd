@@ -47,3 +47,4 @@ qplot(baseline,col=Group, data=subset(physplit, Group\%in\%c("L","O","PN")), geo
 \seealso{
 Other summary_array: \code{\link{createSummarySpikesMat}}
 }
+\concept{summary_array}

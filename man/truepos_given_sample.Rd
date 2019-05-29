@@ -63,3 +63,4 @@ Other population-sampling: \code{\link{prop.ci}},
   \code{\link{required.sample.size}},
   \code{\link{sample_finite_population}}
 }
+\concept{population-sampling}

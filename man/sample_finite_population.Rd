@@ -4,7 +4,8 @@
 \alias{sample_finite_population}
 \title{Sample from finite population with known number of true positives}
 \usage{
-sample_finite_population(n, N, p = NULL, npositive = NULL, replicates = 1)
+sample_finite_population(n, N, p = NULL, npositive = NULL,
+  replicates = 1)
 }
 \arguments{
 \item{n}{sample size}
@@ -65,3 +66,4 @@ Other population-sampling: \code{\link{prop.ci}},
   \code{\link{required.sample.size}},
   \code{\link{truepos_given_sample}}
 }
+\concept{population-sampling}

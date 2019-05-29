@@ -39,3 +39,4 @@ Other population-sampling: \code{\link{prop.ci}},
   \code{\link{sample_finite_population}},
   \code{\link{truepos_given_sample}}
 }
+\concept{population-sampling}
