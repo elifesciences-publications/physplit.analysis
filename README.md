@@ -1,7 +1,13 @@
 # physplit.analysis
 [![Docs](https://img.shields.io/badge/docs-100%25-brightgreen.svg)](http://jefferislab.github.io/physplit.analysis/reference/)
 
-Packaged and versioned Analysis functions for Shahar's cells
+R analysis functions for Shahar Frechter's in vivo patch clamp recordings
+of olfactory neurons as described in 
+
+Functional and anatomical specificity in a higher olfactory centre
+Shahar Frechter, Alexander Shakeel Bates, Sina Tootoonian, Michael-John Dolan,
+James Manton, Arian Rokkum Jamasb, Johannes Kohl, Davi Bock, Gregory Jefferis
+https://doi.org/10.7554/eLife.44590
 
 # Install
 

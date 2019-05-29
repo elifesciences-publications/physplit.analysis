@@ -1,3 +1,8 @@
+# physplit.analysis 0.3.1
+
+* README polishing
+* standalone license
+
 # physplit.analysis 0.3
 
 * prepare release for Frechter et al eLife 2019
