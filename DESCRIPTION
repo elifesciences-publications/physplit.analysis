@@ -1,7 +1,7 @@
 Package: physplit.analysis
 Type: Package
 Title: Packaged and versioned Analysis functions for Shahar's cells
-Version: 0.2
+Version: 0.3
 Authors@R: c(
     person("Shahar", "Frechter",
       role = c("aut"), comment = c(ORCID = "0000-0002-0431-5849")),
