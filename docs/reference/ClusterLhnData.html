@@ -87,7 +87,12 @@ number of cells, K: the number of clusters." />
       </ul>
       
       <ul class="nav navbar-nav navbar-right">
-        
+        <li>
+  <a href="https://github.com/jefferislab/physplit.analysis">
+    <span class="fa fa-github fa-lg"></span>
+     
+  </a>
+</li>
       </ul>
       
     </div><!--/.nav-collapse -->
@@ -102,7 +107,7 @@ number of cells, K: the number of clusters." />
     <div class="page-header">
     <h1>A function for fitting Shahar's LHN data to the linear-nonlinear-poisson
 model.</h1>
-    
+    <small class="dont-index">Source: <a href='https://github.com/jefferislab/physplit.analysis/blob/master/R/ClusterLhnData.R'><code>R/ClusterLhnData.R</code></a></small>
     <div class="hidden name"><code>ClusterLhnData.Rd</code></div>
     </div>
 
@@ -114,11 +119,12 @@ number of cells, K: the number of clusters.</p>
     </div>
 
     <pre class="usage"><span class='fu'>ClusterLhnData</span>(<span class='no'>Data</span>, <span class='kw'>numClusters</span> <span class='kw'>=</span> <span class='fl'>3</span>, <span class='kw'>kalpha</span> <span class='kw'>=</span> <span class='fl'>10</span>, <span class='kw'>thalpha</span> <span class='kw'>=</span> <span class='fl'>3</span>/<span class='fl'>20</span>,
-  <span class='kw'>sdv0</span> <span class='kw'>=</span> <span class='fl'>0.1</span>, <span class='kw'>taua</span> <span class='kw'>=</span> <span class='fl'>1</span>, <span class='kw'>taul0</span> <span class='kw'>=</span> <span class='fl'>0.5</span>, <span class='kw'>minIters</span> <span class='kw'>=</span> <span class='fl'>0</span>, <span class='kw'>numIters</span> <span class='kw'>=</span> <span class='fl'>10000</span>,
-  <span class='kw'>dt</span> <span class='kw'>=</span> <span class='fl'>1e-05</span>, <span class='kw'>seed</span> <span class='kw'>=</span> <span class='fl'>0</span>, <span class='kw'>initMode</span> <span class='kw'>=</span> <span class='st'>"random"</span>, <span class='kw'>iclust</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>verbose</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>, <span class='kw'>timer</span> <span class='kw'>=</span> <span class='st'>"OFF"</span>, <span class='kw'>slopeRatioToStop</span> <span class='kw'>=</span> <span class='fl'>100</span>,
-  <span class='kw'>numSlopePoints</span> <span class='kw'>=</span> <span class='fl'>20</span>, <span class='kw'>checkToStopEvery</span> <span class='kw'>=</span> <span class='fl'>100</span>, <span class='kw'>keepHistory</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>keepHistoryAt</span> <span class='kw'>=</span> <span class='kw'>NULL</span>, <span class='kw'>maxPreFitIters</span> <span class='kw'>=</span> <span class='fl'>1</span>)</pre>
+  <span class='kw'>sdv0</span> <span class='kw'>=</span> <span class='fl'>0.1</span>, <span class='kw'>taua</span> <span class='kw'>=</span> <span class='fl'>1</span>, <span class='kw'>taul0</span> <span class='kw'>=</span> <span class='fl'>0.5</span>, <span class='kw'>minIters</span> <span class='kw'>=</span> <span class='fl'>0</span>,
+  <span class='kw'>numIters</span> <span class='kw'>=</span> <span class='fl'>10000</span>, <span class='kw'>dt</span> <span class='kw'>=</span> <span class='fl'>1e-05</span>, <span class='kw'>seed</span> <span class='kw'>=</span> <span class='fl'>0</span>, <span class='kw'>initMode</span> <span class='kw'>=</span> <span class='st'>"random"</span>,
+  <span class='kw'>iclust</span> <span class='kw'>=</span> <span class='kw'>NULL</span>, <span class='kw'>verbose</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>, <span class='kw'>timer</span> <span class='kw'>=</span> <span class='st'>"OFF"</span>,
+  <span class='kw'>slopeRatioToStop</span> <span class='kw'>=</span> <span class='fl'>100</span>, <span class='kw'>numSlopePoints</span> <span class='kw'>=</span> <span class='fl'>20</span>,
+  <span class='kw'>checkToStopEvery</span> <span class='kw'>=</span> <span class='fl'>100</span>, <span class='kw'>keepHistory</span> <span class='kw'>=</span> <span class='kw'>NULL</span>, <span class='kw'>keepHistoryAt</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>maxPreFitIters</span> <span class='kw'>=</span> <span class='fl'>1</span>)</pre>
     
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">

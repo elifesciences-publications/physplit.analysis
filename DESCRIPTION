@@ -30,3 +30,5 @@ Encoding: UTF-8
 Remotes:
     jefferislab/physplitdata,
     jefferis/gphys
+URL: https://github.com/jefferislab/physplit.analysis
+BugReports: https://github.com/jefferislab/physplit.analysis/issues

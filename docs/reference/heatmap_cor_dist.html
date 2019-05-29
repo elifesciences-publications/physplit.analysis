@@ -32,8 +32,7 @@
 
 <meta property="og:title" content="heatmap for set of cells and odours based on correlation distance — heatmap_cor_dist" />
 
-<meta property="og:description" content="heatmap for set of cells and odours based on correlation distance
-spike_cor_dist calculate the cross-correlation between
+<meta property="og:description" content="spike_cor_dist calculate the cross-correlation between
   the spike responses of a set of cells. It is called by
   heatmap_cor_dist but you may wish to use this data directly." />
 <meta name="twitter:card" content="summary" />
@@ -87,7 +86,12 @@ spike_cor_dist calculate the cross-correlation between
       </ul>
       
       <ul class="nav navbar-nav navbar-right">
-        
+        <li>
+  <a href="https://github.com/jefferislab/physplit.analysis">
+    <span class="fa fa-github fa-lg"></span>
+     
+  </a>
+</li>
       </ul>
       
     </div><!--/.nav-collapse -->
@@ -101,21 +105,21 @@ spike_cor_dist calculate the cross-correlation between
   <div class="col-md-9 contents">
     <div class="page-header">
     <h1>heatmap for set of cells and odours based on correlation distance</h1>
-    
+    <small class="dont-index">Source: <a href='https://github.com/jefferislab/physplit.analysis/blob/master/R/heatmap.R'><code>R/heatmap.R</code></a></small>
     <div class="hidden name"><code>heatmap_cor_dist.Rd</code></div>
     </div>
 
     <div class="ref-description">
     
-    <p>heatmap for set of cells and odours based on correlation distance</p>
-<p><code>spike_cor_dist</code> calculate the cross-correlation between
+    <p><code>spike_cor_dist</code> calculate the cross-correlation between
   the spike responses of a set of cells. It is called by
   <code>heatmap_cor_dist</code> but you may wish to use this data directly.</p>
     
     </div>
 
     <pre class="usage"><span class='fu'>heatmap_cor_dist</span>(<span class='no'>cells</span>, <span class='no'>odours</span>, <span class='kw'>col</span> <span class='kw'>=</span> <span class='fu'><a href='jet.colors.html'>jet.colors</a></span>(<span class='fl'>20</span>), <span class='kw'>labRow</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>labCol</span> <span class='kw'>=</span> <span class='kw'>NULL</span>, <span class='no'>ColSideColors</span>, <span class='no'>RowSideColors</span>, <span class='kw'>heatmapfun</span> <span class='kw'>=</span> <span class='no'>heatmap</span>, <span class='no'>...</span>)
+  <span class='kw'>labCol</span> <span class='kw'>=</span> <span class='kw'>NULL</span>, <span class='no'>ColSideColors</span>, <span class='no'>RowSideColors</span>, <span class='kw'>heatmapfun</span> <span class='kw'>=</span> <span class='no'>heatmap</span>,
+  <span class='no'>...</span>)
 
 <span class='fu'>spike_cor_dist</span>(<span class='no'>cells</span>, <span class='no'>odours</span>)</pre>
     
