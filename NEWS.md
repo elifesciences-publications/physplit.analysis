@@ -1,3 +1,7 @@
+# physplit.analysis 0.3.2
+
+* more doc polishing
+
 # physplit.analysis 0.3.1
 
 * README polishing
