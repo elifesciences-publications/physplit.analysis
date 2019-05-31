@@ -22,12 +22,12 @@ remotes::install_github("jefferislab/physplit.analysis")
 ```
 
 ## Hacking physplit.analysis
-You can clone this repo and use RStudio to work with `physplitdata.Rproj` to 
+You can clone this repo and use RStudio to work with `physplit.analysis.Rproj` to 
 work on the functions in this package.
 
 You can also install from a local checkout if you happen to have one – something 
 like this.
 
 ```r
-devtools::install_git("~/dev/R/physplitdata")
+devtools::install("~/dev/R/physplit.analysis")
 ```
